@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="best-team-entity" />
+        <module name="best-team-cart-api" />
+        <module name="best-team-user-api" />
+        <module name="best-team-sso" />
+        <module name="best-team-search" />
+        <module name="best-team-resources-api" />
+        <module name="best-team-web" />
+        <module name="best-team-product-service" />
+        <module name="best-team-product-api" />
+        <module name="best-team-common" />
+        <module name="best-team-staticresources" />
+        <module name="best-team-sms-service" />
+        <module name="best-team-product-type-api" />
+        <module name="best-team-mapper" />
+        <module name="best-team-product" />
+        <module name="best-team-user-service" />
+        <module name="best-team-service" />
+        <module name="best-team-index" />
+        <module name="best-team-search-api" />
+        <module name="best-team-email-service" />
+        <module name="best-team-index-service" />
+        <module name="best-team-cart" />
+        <module name="best-team-cart-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="best-team-cart" options="-parameters" />
+      <module name="best-team-cart-service" options="-parameters" />
+      <module name="best-team-common" options="" />
+      <module name="best-team-email-service" options="-parameters" />
+      <module name="best-team-entity" options="" />
+      <module name="best-team-index" options="-parameters" />
+      <module name="best-team-index-service" options="-parameters" />
+      <module name="best-team-mapper" options="" />
+      <module name="best-team-product" options="-parameters" />
+      <module name="best-team-product-service" options="-parameters" />
+      <module name="best-team-search" options="-parameters" />
+      <module name="best-team-sms-service" options="-parameters" />
+      <module name="best-team-sso" options="-parameters" />
+      <module name="best-team-staticresources" options="-parameters" />
+      <module name="best-team-user-service" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/best-team-basic/best-team-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-basic/best-team-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-basic/best-team-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-service/best-team-cart-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-service/best-team-email-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-service/best-team-index-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-service/best-team-product-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-service/best-team-sms-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-service/best-team-staticresources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-service/best-team-user-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-web/best-team-cart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-web/best-team-index" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-web/best-team-product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-web/best-team-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/best-team-web/best-team-sso" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
