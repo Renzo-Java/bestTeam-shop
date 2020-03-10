@@ -8,26 +8,26 @@
         <outputRelativeToContentRoot value="true" />
         <module name="best-team-entity" />
         <module name="best-team-cart-api" />
-        <module name="best-team-user-api" />
         <module name="best-team-sso" />
+        <module name="best-team-product" />
+        <module name="best-team-cart" />
         <module name="best-team-search" />
         <module name="best-team-resources-api" />
         <module name="best-team-web" />
-        <module name="best-team-product-service" />
         <module name="best-team-product-api" />
         <module name="best-team-common" />
-        <module name="best-team-staticresources" />
         <module name="best-team-sms-service" />
         <module name="best-team-product-type-api" />
         <module name="best-team-mapper" />
-        <module name="best-team-product" />
+        <module name="best-team-product-service" />
         <module name="best-team-user-service" />
         <module name="best-team-service" />
         <module name="best-team-index" />
         <module name="best-team-search-api" />
         <module name="best-team-email-service" />
         <module name="best-team-index-service" />
-        <module name="best-team-cart" />
+        <module name="best-team-staticresources" />
+        <module name="best-team-user-api" />
         <module name="best-team-cart-service" />
       </profile>
     </annotationProcessing>
