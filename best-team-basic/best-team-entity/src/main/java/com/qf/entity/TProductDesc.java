@@ -1,11 +1,10 @@
 package com.qf.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TProductType {
-    private Long cid;
-
-    private String cname;
+public class TProductDesc implements Serializable {
+    private Long id;
 
     private Long pid;
 
@@ -19,20 +18,14 @@ public class TProductType {
 
     private Long updateUser;
 
-    public Long getCid() {
-        return cid;
+    private String pdesc;
+
+    public Long getId() {
+        return id;
     }
 
-    public void setCid(Long cid) {
-        this.cid = cid;
-    }
-
-    public String getCname() {
-        return cname;
-    }
-
-    public void setCname(String cname) {
-        this.cname = cname == null ? null : cname.trim();
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Long getPid() {
@@ -81,5 +74,13 @@ public class TProductType {
 
     public void setUpdateUser(Long updateUser) {
         this.updateUser = updateUser;
+    }
+
+    public String getPdesc() {
+        return pdesc;
+    }
+
+    public void setPdesc(String pdesc) {
+        this.pdesc = pdesc == null ? null : pdesc.trim();
     }
 }

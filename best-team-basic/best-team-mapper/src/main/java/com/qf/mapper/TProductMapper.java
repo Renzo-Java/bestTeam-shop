@@ -1,8 +1,9 @@
 package com.qf.mapper;
 
+import com.qf.base.IBaseDao;
 import com.qf.entity.TProduct;
 
-public interface TProductMapper {
+public interface TProductMapper extends IBaseDao<TProduct> {
     int deleteByPrimaryKey(Long pid);
 
     int insert(TProduct record);

@@ -1,8 +1,9 @@
 package com.qf.mapper;
 
+import com.qf.base.IBaseDao;
 import com.qf.entity.TUser;
 
-public interface TUserMapper {
+public interface TUserMapper extends IBaseDao<TUser> {
     int deleteByPrimaryKey(Long id);
 
     int insert(TUser record);
