@@ -1,6 +1,8 @@
 package com.qf.entity;
 
-public class TOrdership {
+import java.io.Serializable;
+
+public class TOrdership implements Serializable {
     private Integer id;
 
     private String orderid;

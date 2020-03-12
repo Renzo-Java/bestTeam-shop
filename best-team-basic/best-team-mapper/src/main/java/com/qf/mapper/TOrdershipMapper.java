@@ -1,17 +1,8 @@
 package com.qf.mapper;
 
+import com.qf.base.IBaseDao;
 import com.qf.entity.TOrdership;
 
-public interface TOrdershipMapper {
-    int deleteByPrimaryKey(Integer id);
+public interface TOrdershipMapper extends IBaseDao<TOrdership> {
 
-    int insert(TOrdership record);
-
-    int insertSelective(TOrdership record);
-
-    TOrdership selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(TOrdership record);
-
-    int updateByPrimaryKey(TOrdership record);
 }

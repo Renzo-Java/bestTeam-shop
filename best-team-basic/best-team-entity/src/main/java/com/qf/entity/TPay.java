@@ -1,6 +1,8 @@
 package com.qf.entity;
 
-public class TPay {
+import java.io.Serializable;
+
+public class TPay implements Serializable {
     private Integer id;
 
     private String name;

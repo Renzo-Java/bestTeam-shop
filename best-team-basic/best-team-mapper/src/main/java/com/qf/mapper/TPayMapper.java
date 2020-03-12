@@ -1,17 +1,8 @@
 package com.qf.mapper;
 
+import com.qf.base.IBaseDao;
 import com.qf.entity.TPay;
 
-public interface TPayMapper {
-    int deleteByPrimaryKey(Integer id);
+public interface TPayMapper extends IBaseDao<TPay> {
 
-    int insert(TPay record);
-
-    int insertSelective(TPay record);
-
-    TPay selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(TPay record);
-
-    int updateByPrimaryKey(TPay record);
 }

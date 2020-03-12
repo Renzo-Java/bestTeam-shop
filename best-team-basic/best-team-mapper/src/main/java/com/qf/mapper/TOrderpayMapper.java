@@ -1,17 +1,8 @@
 package com.qf.mapper;
 
+import com.qf.base.IBaseDao;
 import com.qf.entity.TOrderpay;
 
-public interface TOrderpayMapper {
-    int deleteByPrimaryKey(Integer id);
+public interface TOrderpayMapper extends IBaseDao<TOrderpay> {
 
-    int insert(TOrderpay record);
-
-    int insertSelective(TOrderpay record);
-
-    TOrderpay selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(TOrderpay record);
-
-    int updateByPrimaryKey(TOrderpay record);
 }

@@ -1,9 +1,10 @@
 package com.qf.entity;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class TOrder {
+public class TOrder implements Serializable {
     private Integer id;
 
     private String account;

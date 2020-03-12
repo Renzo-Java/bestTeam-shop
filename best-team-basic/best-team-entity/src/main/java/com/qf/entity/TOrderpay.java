@@ -1,9 +1,10 @@
 package com.qf.entity;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class TOrderpay {
+public class TOrderpay implements Serializable {
     private Integer id;
 
     private String orderid;
