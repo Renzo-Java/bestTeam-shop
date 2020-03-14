@@ -1,0 +1,31 @@
+server:
+  port: 2023
+spring:
+  application:
+    name: best-team-email-service
+  mail:
+    host: smtp.qq.com
+    username: 1378523714@qq.com
+    password: gohxvivqytqbjgai
+    default-encoding: utf-8
+  rabbitmq:
+    host: 192.168.6.132
+    port: 5672
+    username: yzy
+    password: 123456
+    virtual-host: test
+  redis:
+    jedis:
+      pool:
+        max-active: 20
+    host: 192.168.6.132
+    password: 123456
+    port: 6379
+dubbo:
+  application:
+    name: best-team-regist-service
+  registry:
+    address: zookeeper://192.168.6.132:2181
+  protocol: 20883
+
+activeServerUrl: http://localhost:2023/email/active/

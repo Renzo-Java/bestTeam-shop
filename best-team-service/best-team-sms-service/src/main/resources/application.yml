@@ -1,0 +1,22 @@
+server:
+  port: 2021
+#dubbo:
+#  application:
+#    name: shop-sms-service
+#  registry:
+#    address: zookeeper://192.168.6.132:2181
+#  protocol: 20881
+spring:
+  rabbitmq:
+    host: 192.168.6.132
+    port: 5672
+    username: yzy
+    password: 123456
+    virtual-host: test
+  redis:
+    jedis:
+      pool:
+        max-active: 20
+    host: 192.168.6.132
+    password: 123456
+    port: 6379
