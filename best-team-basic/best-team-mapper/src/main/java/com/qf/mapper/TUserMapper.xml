@@ -103,6 +103,16 @@
       </if>
     </trim>
   </insert>
+
+
+  <update id="updateByEmail" parameterType="java.lang.String">
+    update t_user
+    <set>
+        flag = 1,
+    </set>
+    where email = #{email,jdbcType=VARCHAR}
+  </update>
+
   <update id="updateByPrimaryKeySelective" parameterType="com.qf.entity.TUser">
     update t_user
     <set>

@@ -3,6 +3,8 @@ package com.qf.mapper;
 import com.qf.base.IBaseDao;
 import com.qf.entity.TProductType;
 
-public interface TProductTypeMapper extends IBaseDao<TProductType> {
+import java.util.List;
 
+public interface TProductTypeMapper extends IBaseDao<TProductType> {
+    List<TProductType> getAll();
 }

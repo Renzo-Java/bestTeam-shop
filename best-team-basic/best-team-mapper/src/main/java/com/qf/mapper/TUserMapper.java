@@ -4,5 +4,5 @@ import com.qf.base.IBaseDao;
 import com.qf.entity.TUser;
 
 public interface TUserMapper extends IBaseDao<TUser> {
-
+    int updateByEmail(String email);
 }
