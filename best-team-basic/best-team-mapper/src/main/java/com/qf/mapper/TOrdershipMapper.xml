@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.mapper.TOrdershipMapper">
+  <resultMap id="BaseResultMap" type="com.qf.entity.TOrdership">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="orderid" jdbcType="VARCHAR" property="orderid" />
+    <result column="shipname" jdbcType="VARCHAR" property="shipname" />
+    <result column="shipaddress" jdbcType="VARCHAR" property="shipaddress" />
+    <result column="provinceCode" jdbcType="VARCHAR" property="provincecode" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="cityCode" jdbcType="VARCHAR" property="citycode" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="areaCode" jdbcType="VARCHAR" property="areacode" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="zip" jdbcType="VARCHAR" property="zip" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, orderid, shipname, shipaddress, provinceCode, province, cityCode, city, areaCode, 
+    area, phone, tel, zip, sex, remark
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_ordership
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_ordership
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.qf.entity.TOrdership">
+    insert into t_ordership (id, orderid, shipname, 
+      shipaddress, provinceCode, province, 
+      cityCode, city, areaCode, 
+      area, phone, tel, zip, 
+      sex, remark)
+    values (#{id,jdbcType=INTEGER}, #{orderid,jdbcType=VARCHAR}, #{shipname,jdbcType=VARCHAR}, 
+      #{shipaddress,jdbcType=VARCHAR}, #{provincecode,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, 
+      #{citycode,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR}, #{areacode,jdbcType=VARCHAR}, 
+      #{area,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{tel,jdbcType=VARCHAR}, #{zip,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.qf.entity.TOrdership">
+    insert into t_ordership
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="orderid != null">
+        orderid,
+      </if>
+      <if test="shipname != null">
+        shipname,
+      </if>
+      <if test="shipaddress != null">
+        shipaddress,
+      </if>
+      <if test="provincecode != null">
+        provinceCode,
+      </if>
+      <if test="province != null">
+        province,
+      </if>
+      <if test="citycode != null">
+        cityCode,
+      </if>
+      <if test="city != null">
+        city,
+      </if>
+      <if test="areacode != null">
+        areaCode,
+      </if>
+      <if test="area != null">
+        area,
+      </if>
+      <if test="phone != null">
+        phone,
+      </if>
+      <if test="tel != null">
+        tel,
+      </if>
+      <if test="zip != null">
+        zip,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="orderid != null">
+        #{orderid,jdbcType=VARCHAR},
+      </if>
+      <if test="shipname != null">
+        #{shipname,jdbcType=VARCHAR},
+      </if>
+      <if test="shipaddress != null">
+        #{shipaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="provincecode != null">
+        #{provincecode,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null">
+        #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="citycode != null">
+        #{citycode,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null">
+        #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="areacode != null">
+        #{areacode,jdbcType=VARCHAR},
+      </if>
+      <if test="area != null">
+        #{area,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="tel != null">
+        #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="zip != null">
+        #{zip,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qf.entity.TOrdership">
+    update t_ordership
+    <set>
+      <if test="orderid != null">
+        orderid = #{orderid,jdbcType=VARCHAR},
+      </if>
+      <if test="shipname != null">
+        shipname = #{shipname,jdbcType=VARCHAR},
+      </if>
+      <if test="shipaddress != null">
+        shipaddress = #{shipaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="provincecode != null">
+        provinceCode = #{provincecode,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null">
+        province = #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="citycode != null">
+        cityCode = #{citycode,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null">
+        city = #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="areacode != null">
+        areaCode = #{areacode,jdbcType=VARCHAR},
+      </if>
+      <if test="area != null">
+        area = #{area,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="tel != null">
+        tel = #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="zip != null">
+        zip = #{zip,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qf.entity.TOrdership">
+    update t_ordership
+    set orderid = #{orderid,jdbcType=VARCHAR},
+      shipname = #{shipname,jdbcType=VARCHAR},
+      shipaddress = #{shipaddress,jdbcType=VARCHAR},
+      provinceCode = #{provincecode,jdbcType=VARCHAR},
+      province = #{province,jdbcType=VARCHAR},
+      cityCode = #{citycode,jdbcType=VARCHAR},
+      city = #{city,jdbcType=VARCHAR},
+      areaCode = #{areacode,jdbcType=VARCHAR},
+      area = #{area,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      tel = #{tel,jdbcType=VARCHAR},
+      zip = #{zip,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
