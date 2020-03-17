@@ -15,10 +15,12 @@
     <modules>
         <module>best-team-cart-api</module>
         <module>best-team-product-api</module>
-        <module>best-team-product-type-api</module>
         <module>best-team-resources-api</module>
         <module>best-team-search-api</module>
         <module>best-team-user-api</module>
+        <module>best-team-product-type-api</module>
+        <module>best-team-regist-api</module>
+
     </modules>
 
 

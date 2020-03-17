@@ -6,7 +6,7 @@ spring:
   mail:
     host: smtp.qq.com
     username: 1378523714@qq.com
-    password: gohxvivqytqbjgai
+    password: npobmgspzhadgajh
     default-encoding: utf-8
   rabbitmq:
     host: 192.168.6.132
@@ -26,6 +26,7 @@ dubbo:
     name: best-team-regist-service
   registry:
     address: zookeeper://192.168.6.132:2181
-  protocol: 20883
+  protocol:
+    port: 20886
 
 activeServerUrl: http://localhost:2023/email/active/

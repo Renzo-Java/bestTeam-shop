@@ -14,12 +14,19 @@
   <sql id="Base_Column_List">
     cid, cname, pid, flag, create_time, update_time, create_user, update_user
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select 
+
+  <select id="getAll" resultMap="BaseResultMap">
+    select
     <include refid="Base_Column_List" />
     from t_product_type
-    where cid = #{cid,jdbcType=BIGINT}
   </select>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+  select
+  <include refid="Base_Column_List" />
+  from t_product_type
+  where cid = #{cid,jdbcType=BIGINT}
+</select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from t_product_type
     where cid = #{cid,jdbcType=BIGINT}

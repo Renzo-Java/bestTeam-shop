@@ -12,5 +12,12 @@
     <artifactId>best-team-cart-api</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.qf</groupId>
+            <artifactId>best-team-common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

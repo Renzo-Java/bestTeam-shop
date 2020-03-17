@@ -103,4 +103,20 @@ public class TUser implements Serializable {
     public void setUpdateUser(Long updateUser) {
         this.updateUser = updateUser;
     }
+
+    @Override
+    public String toString() {
+        return "TUser{" +
+                "id=" + id +
+                ", uname='" + uname + '\'' +
+                ", password='" + password + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ", flag=" + flag +
+                ", createTime=" + createTime +
+                ", createUser=" + createUser +
+                ", updateTime=" + updateTime +
+                ", updateUser=" + updateUser +
+                '}';
+    }
 }

@@ -18,6 +18,8 @@ spring:
     port: 6379
 dubbo:
   application:
-    name: best-team-email-service
+    name: best-team-email-web1
   registry:
     address: zookeeper://192.168.6.132:2181
+  protocol:
+    port: 20887

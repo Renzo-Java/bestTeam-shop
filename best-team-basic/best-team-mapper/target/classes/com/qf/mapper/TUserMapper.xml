@@ -16,6 +16,14 @@
   <sql id="Base_Column_List">
     id, uname, password, phone, email, flag, create_time, create_user, update_time, update_user
   </sql>
+
+  <select id="selectByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_user
+    where uname = #{username,jdbcType=VARCHAR} or phone = #{username,jdbcType=VARCHAR} or email = #{username,jdbcType=VARCHAR} and flag = 1
+  </select>
+
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
@@ -103,6 +111,16 @@
       </if>
     </trim>
   </insert>
+
+
+  <update id="updateByEmail" parameterType="java.lang.String">
+    update t_user
+    <set>
+        flag = 1,
+    </set>
+    where email = #{email,jdbcType=VARCHAR}
+  </update>
+
   <update id="updateByPrimaryKeySelective" parameterType="com.qf.entity.TUser">
     update t_user
     <set>

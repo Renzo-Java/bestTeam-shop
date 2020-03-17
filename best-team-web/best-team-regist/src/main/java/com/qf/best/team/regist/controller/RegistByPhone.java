@@ -32,6 +32,7 @@ public class RegistByPhone {
         int o = (int)redisTemplate.opsForValue().get(phone);
 
         if(o==code){
+            user.setFlag(true);
             registApi.insertSelective(user);
             return ResultBean.success("注册成功!");
         }
